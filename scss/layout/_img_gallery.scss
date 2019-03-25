@@ -1,0 +1,58 @@
+.image_container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+
+  img{
+    height: 300px;
+    width: 300px;
+    margin: 1rem;
+    object-fit: cover;
+  }
+
+  @include tablet{
+    img{
+      height: 300px;
+      width: 300px;
+      -webkit-box-shadow: 8px 9px 22px -4px rgba(12,92,115,0.25);
+    -moz-box-shadow: 8px 9px 22px -4px rgba(12,92,115,0.25);
+  box-shadow: 8px 9px 22px -4px rgba(12,92,115,0.25);
+    }
+  }
+
+  @include desktop{
+    img{
+      height: 400px;
+      width: 400px; 
+    }
+  }
+}
+
+.float_container{
+  margin: 0 auto;
+  width: 100%;
+
+  .float{
+    float: left;
+    width: 96%;
+    padding: 2%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  @include tablet{
+    .float{
+      width: 29.33%;
+    } 
+  }
+
+  @include desktop{
+    
+  }
+  
+}

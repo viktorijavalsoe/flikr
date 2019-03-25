@@ -1,0 +1,13 @@
+header{
+  margin: 4rem 2rem 2rem 2rem;
+  background-image: url(../images/background_image.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  
+  @include tablet{
+    background-position: center;
+
+  }
+    
+}
+    

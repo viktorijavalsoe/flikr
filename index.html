@@ -5,27 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+
+  <!-- UI-->
+  <link rel="stylesheet" type="text/css" href="external/jquery-ui.css">
+  <script src="js/JQuery.3.1.1.js"></script>
+  <script src="external/jquery-ui.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <title>Document</title>
+  <title>Flicr</title>
 </head>
+
 <body>
   <header>
+    <div class="header_content">
+      <h1 class="hero_text">Welcome to the Image Finder</h1>
 
-    <h2>Picture perfect</h2>
-
+      <form class="search_field">
+        <input type="search" class="task_input" id="category" placeholder="Search for...">
+        <button id="search" class="search_button"><i class="fas fa-search"></i></button>
+      </form>
+      
+      <p class="switch_text"></p>
+        <label class="switch">
+          <input type="checkbox" id="switch_toggle">
+          <span class="slider round"></span>
+        </label>
+    </div>
   </header>
+  
+  <section class="image_container">
+    
+  </section>
 
-  <form class="search_field">
-    <input type="search" id="category" placeholder="Search For">
-    <button id="search">Search</button>
-  </form>
-
-  <div class="image_container">
-
+  <div id="dialog">
+    <div id="title"></div>
+    <img id="dialog_box" src="" alt="">
   </div>
+
+
   
 </body>
-
-<script src="js/JQuery.3.1.1.js"></script>  
 <script src="js/flikr.js"></script>
 </html>
